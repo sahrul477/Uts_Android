@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UTS ANDROID</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string-array name="jenis_kelamin_arrays">
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+</resources>

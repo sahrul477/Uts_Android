@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/mn_snack_simpan"
+        android:title="simpan"
+        android:icon="@drawable/ic_action_add_circle"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/mn_snack_kosong"
+        android:title="Kosong"
+        android:icon="@drawable/ic_action_delete_forever"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/mn_snack_biodata"
+        android:title="Biodata"
+        android:icon="@drawable/ic_action_add_circle"
+        app:showAsAction="never" />
+
+
+</menu>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/main_activity_pertama">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="PENDAFTARAN" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="SISWA(I) SMK PEMBANGUNAN 2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textColor="#000"
+                android:text="Sebelum mengisi formulir ini diharapkan wali muri telah melengkapi persyaratan yang ditentukan" />
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_action_account_box"
+                android:layout_marginTop="30dp"/>
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-35dp"
+                android:hint="Nama Depan"/>
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Belakang"
+                android:layout_marginTop="-15dp"
+                android:layout_marginLeft="40dp" />
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_action_place" />
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_marginTop="-35dp"
+                android:layout_height="wrap_content"
+                android:hint="Alamat"
+                android:layout_marginLeft="40dp" />
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_action_local_phone" />
+            <EditText
+                android:id="@+id/phone"
+                android:layout_marginTop="-35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telepon"
+                android:layout_marginLeft="40dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_action_group" />
+                <RadioGroup
+                    android:id="@+id/sekolah_radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp">
+                    <RadioButton
+                        android:id="@+id/rb_smp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SMP"/>
+                    <RadioButton
+                        android:id="@+id/rb_smp1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SMP1"/>
+                    <RadioButton
+                        android:id="@+id/rb_mts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MTS"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_action_wc" />
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="-23dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/jenis_kelamin_arrays"
+                android:prompt="@string/jenis_kelamin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000"
+                android:text="Pilihan sekolah alternatif" />
+
+            <CheckBox
+                android:id="@+id/cb_smk_dwi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMK Dwidaya"
+                android:layout_marginLeft="35dp" />
+            <CheckBox
+                android:id="@+id/cb_smk_don"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMU Don Bosco"
+                android:layout_marginLeft="35dp" />
+            <CheckBox
+                android:id="@+id/cb_smk_merah_putih"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMK Merah Putih"
+                android:layout_marginLeft="35dp" />
+            <CheckBox
+                android:id="@+id/cb_smu_sutar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMU Sutarmadya"
+                android:layout_marginLeft="35dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
